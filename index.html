@@ -3,159 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>متجر الساعات</title>
+
+<title>متجر الساعات - أكادير</title>
 
 <style>
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    color: #222;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222;
 }
 
 header {
-    background: #ff4747;
-    color: white;
-    padding: 18px 15px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 25px;
+  margin: 0;
+  font-size: 30px;
 }
 
 header p {
-    margin: 7px 0 0;
-    font-size: 14px;
-}
-
-.search {
-    background: white;
-    padding: 12px;
-    text-align: center;
-}
-
-.search input {
-    width: 95%;
-    max-width: 600px;
-    padding: 13px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
+  font-size: 17px;
 }
 
 .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 15px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
 .products {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
 }
 
 .product {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: white;
+  border-radius: 15px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  text-align: center;
 }
 
-.watch {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    background-image: url("watches.jpg");
-    background-size: 500% 300%;
-    background-repeat: no-repeat;
+.product img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
-/* صور الساعات الـ15 */
-.w1  { background-position: 0% 0%; }
-.w2  { background-position: 25% 0%; }
-.w3  { background-position: 50% 0%; }
-.w4  { background-position: 75% 0%; }
-.w5  { background-position: 100% 0%; }
-
-.w6  { background-position: 0% 50%; }
-.w7  { background-position: 25% 50%; }
-.w8  { background-position: 50% 50%; }
-.w9  { background-position: 75% 50%; }
-.w10 { background-position: 100% 50%; }
-
-.w11 { background-position: 0% 100%; }
-.w12 { background-position: 25% 100%; }
-.w13 { background-position: 50% 100%; }
-.w14 { background-position: 75% 100%; }
-.w15 { background-position: 100% 100%; }
-
-.info {
-    padding: 10px;
-}
-
-.info h3 {
-    margin: 0 0 8px;
-    font-size: 15px;
+.product h2 {
+  font-size: 18px;
+  margin: 10px 0;
 }
 
 .price {
-    color: #e63946;
-    font-size: 21px;
-    font-weight: bold;
+  font-size: 22px;
+  font-weight: bold;
+  color: #c58b20;
+  margin: 10px 0;
 }
 
-.old-price {
-    color: #999;
-    text-decoration: line-through;
-    font-size: 13px;
-    margin-right: 5px;
+.info {
+  color: #666;
+  margin-bottom: 10px;
 }
 
 .order {
-    display: block;
-    width: 100%;
-    border: 0;
-    background: #ff4747;
-    color: white;
-    padding: 11px;
-    border-radius: 7px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 9px;
+  display: block;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
-.order:hover {
-    background: #e63333;
+.call {
+  display: block;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 8px;
+  font-weight: bold;
 }
 
 footer {
-    text-align: center;
-    background: #222;
-    color: white;
-    padding: 25px 10px;
-    margin-top: 20px;
+  text-align: center;
+  padding: 25px;
+  color: #666;
 }
 
 @media (min-width: 700px) {
-    .products {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1000px) {
-    .products {
-        grid-template-columns: repeat(5, 1fr);
-    }
+  .products {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 </style>
 </head>
@@ -163,191 +122,156 @@ footer {
 <body>
 
 <header>
-    <h1>⌚ متجر الساعات العصرية</h1>
-    <p>ساعات أنيقة بأسعار مناسبة</p>
+  <h1>⌚ متجر الساعات الفاخرة</h1>
+  <p>أناقة وجودة بأسعار مناسبة</p>
 </header>
 
-<div class="search">
-    <input type="text" id="search" placeholder="🔍 ابحث عن ساعة..." onkeyup="searchProducts()">
+<div class="container">
+<div class="products">
+
+<div class="product">
+  <img src="watch1.jpg" alt="ساعة 1">
+  <h2>ساعة فاخرة وأنيقة</h2>
+  <div class="price">150 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%201%20بسعر%20150%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
 </div>
 
-<div class="container">
-    <div class="products">
+<div class="product">
+  <img src="watch2.jpg" alt="ساعة 2">
+  <h2>ساعة كلاسيكية</h2>
+  <div class="price">130 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%202%20بسعر%20130%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w1"></div>
-            <div class="info">
-                <h3>ساعة عصرية فاخرة</h3>
-                <span class="price">150 درهم</span>
-                <button class="order" onclick="order('ساعة عصرية فاخرة',150)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch3.jpg" alt="ساعة 3">
+  <h2>ساعة رياضية</h2>
+  <div class="price">120 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%203%20بسعر%20120%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w2"></div>
-            <div class="info">
-                <h3>ساعة كلاسيكية</h3>
-                <span class="price">130 درهم</span>
-                <button class="order" onclick="order('ساعة كلاسيكية',130)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch4.jpg" alt="ساعة 4">
+  <h2>ساعة ذهبية</h2>
+  <div class="price">140 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%204%20بسعر%20140%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w3"></div>
-            <div class="info">
-                <h3>ساعة رياضية</h3>
-                <span class="price">120 درهم</span>
-                <button class="order" onclick="order('ساعة رياضية',120)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch5.jpg" alt="ساعة 5">
+  <h2>ساعة جلدية</h2>
+  <div class="price">100 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%205%20بسعر%20100%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w4"></div>
-            <div class="info">
-                <h3>ساعة ذهبية</h3>
-                <span class="price">140 درهم</span>
-                <button class="order" onclick="order('ساعة ذهبية',140)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch6.jpg" alt="ساعة 6">
+  <h2>ساعة كرونوغراف</h2>
+  <div class="price">200 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%206%20بسعر%20200%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w5"></div>
-            <div class="info">
-                <h3>ساعة جلدية</h3>
-                <span class="price">100 درهم</span>
-                <button class="order" onclick="order('ساعة جلدية',100)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch7.jpg" alt="ساعة 7">
+  <h2>ساعة سوداء أنيقة</h2>
+  <div class="price">160 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%207%20بسعر%20160%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w6"></div>
-            <div class="info">
-                <h3>ساعة كرونوغراف</h3>
-                <span class="price">200 درهم</span>
-                <button class="order" onclick="order('ساعة كرونوغراف',200)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch8.jpg" alt="ساعة 8">
+  <h2>ساعة رياضية خضراء</h2>
+  <div class="price">170 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%208%20بسعر%20170%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w7"></div>
-            <div class="info">
-                <h3>ساعة سوداء أنيقة</h3>
-                <span class="price">160 درهم</span>
-                <button class="order" onclick="order('ساعة سوداء أنيقة',160)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch9.jpg" alt="ساعة 9">
+  <h2>ساعة فاخرة</h2>
+  <div class="price">180 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%209%20بسعر%20180%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w8"></div>
-            <div class="info">
-                <h3>ساعة رياضية خضراء</h3>
-                <span class="price">170 درهم</span>
-                <button class="order" onclick="order('ساعة رياضية خضراء',170)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch10.jpg" alt="ساعة 10">
+  <h2>ساعة نسائية</h2>
+  <div class="price">150 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%2010%20بسعر%20150%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w9"></div>
-            <div class="info">
-                <h3>ساعة فاخرة</h3>
-                <span class="price">180 درهم</span>
-                <button class="order" onclick="order('ساعة فاخرة',180)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch11.jpg" alt="ساعة 11">
+  <h2>ساعة رياضية سوداء</h2>
+  <div class="price">130 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%2011%20بسعر%20130%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w10"></div>
-            <div class="info">
-                <h3>ساعة نسائية</h3>
-                <span class="price">150 درهم</span>
-                <button class="order" onclick="order('ساعة نسائية',150)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch12.jpg" alt="ساعة 12">
+  <h2>ساعة خضراء كلاسيكية</h2>
+  <div class="price">120 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%2012%20بسعر%20120%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w11"></div>
-            <div class="info">
-                <h3>ساعة رياضية سوداء</h3>
-                <span class="price">130 درهم</span>
-                <button class="order" onclick="order('ساعة رياضية سوداء',130)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch13.jpg" alt="ساعة 13">
+  <h2>ساعة جلدية زرقاء</h2>
+  <div class="price">140 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%2013%20بسعر%20140%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w12"></div>
-            <div class="info">
-                <h3>ساعة خضراء كلاسيكية</h3>
-                <span class="price">120 درهم</span>
-                <button class="order" onclick="order('ساعة خضراء كلاسيكية',120)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch14.jpg" alt="ساعة 14">
+  <h2>ساعة سوداء كلاسيكية</h2>
+  <div class="price">100 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%2014%20بسعر%20100%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w13"></div>
-            <div class="info">
-                <h3>ساعة جلدية زرقاء</h3>
-                <span class="price">140 درهم</span>
-                <button class="order" onclick="order('ساعة جلدية زرقاء',140)">اطلب الآن</button>
-            </div>
-        </div>
+<div class="product">
+  <img src="watch15.jpg" alt="ساعة 15">
+  <h2>ساعة ذهبية فاخرة</h2>
+  <div class="price">200 درهم</div>
+  <div class="info">📍 التوصيل داخل أكادير</div>
+  <a class="order" href="https://wa.me/212783084921?text=السلام%20عليكم،%20أريد%20طلب%20الساعة%2015%20بسعر%20200%20درهم">🛒 اطلب عبر واتساب</a>
+  <a class="call" href="tel:0783084921">📞 اتصل الآن</a>
+</div>
 
-        <div class="product">
-            <div class="watch w14"></div>
-            <div class="info">
-                <h3>ساعة سوداء كلاسيكية</h3>
-                <span class="price">100 درهم</span>
-                <button class="order" onclick="order('ساعة سوداء كلاسيكية',100)">اطلب الآن</button>
-            </div>
-        </div>
-
-        <div class="product">
-            <div class="watch w15"></div>
-            <div class="info">
-                <h3>ساعة ذهبية فاخرة</h3>
-                <span class="price">200 درهم</span>
-                <button class="order" onclick="order('ساعة ذهبية فاخرة',200)">اطلب الآن</button>
-            </div>
-        </div>
-
-    </div>
+</div>
 </div>
 
 <footer>
-    <p>📞 للطلب عبر واتساب: 0783084921</p>
-    <p>🚚 توصيل متاح</p>
+© 2026 متجر الساعات - أكادير
+<br>
+📞 0783084921
 </footer>
 
-<script>
-function order(product, price) {
-    const phone = "212783084921";
-
-    const message =
-        "السلام عليكم، أريد طلب:%0A" +
-        "المنتج: " + product + "%0A" +
-        "الثمن: " + price + " درهم%0A" +
-        "المرجو تأكيد الطلب.";
-
-    window.open(
-        "https://wa.me/" + phone + "?text=" + message,
-        "_blank"
-    );
-}
-
-function searchProducts() {
-    const input = document.getElementById("search").value.toLowerCase();
-    const products = document.querySelectorAll(".product");
-
-    products.forEach(product => {
-        const name = product.querySelector("h3").textContent.toLowerCase();
-
-        if (name.includes(input)) {
-            product.style.display = "";
-        } else {
-            product.style.display = "none";
-        }
-    });
-}
-</script>
-
 </body>
-  </html>
+    </html>
